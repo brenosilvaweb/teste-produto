@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lift Detox Black</title>
+  <link rel="icon" href="img/logo Lift Detox.jpeg">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .animate-bounce { animation: bounce 2s infinite; }
+    .marquee { animation: marquee 15s linear infinite; }
+    @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-10px); } }
+    @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+    .smooth-scroll { scroll-behavior: smooth; }
+    .hero-bg { background: linear-gradient(to right, #1a1a1a, #2d6a4f); }
+    .mobile-menu { transition: max-height 0.3s ease-in-out; overflow: hidden; }
+    .mobile-menu.hidden { max-height: 0; }
+    .mobile-menu.open { max-height: 500px; }
+  </style>
+</head>
+<body class="bg-gray-100 smooth-scroll">
+  <!-- Header -->
+  <header class="fixed top-0 w-full bg-black text-white shadow-lg z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <img src="img/logo Lift Detox.jpeg" alt="Lift Detox Black Logo" class="h-12" style="height: 90px;">
+      <!-- Botão Hamburguer -->
+      <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex space-x-4 items-center">
+        <a href="#benefits" class="hover:text-green-400 transition">Benefícios</a>
+        <a href="#testimonials" class="hover:text-green-400 transition">Depoimentos</a>
+        <a href="#kits" class="hover:text-green-400 transition">Kits</a>
+        <a href="#guarantee" class="hover:text-green-400 transition">Garantia</a>
+        <a href="#faq" class="hover:text-green-400 transition">FAQ</a>
+        <a href="https://pay.braip.co/pv/lip9jvq9/afivpdxezl" target="_blank" class="bg-green-500 px-4 py-2 rounded-full hover:bg-green-600 transition">Comprar Agora</a>
+      </nav>
+    </div>
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-black">
+      <nav class="flex flex-col items-center space-y-4 py-4">
+        <a href="#benefits" class="hover:text-green-400 transition">Benefícios</a>
+        <a href="#testimonials" class="hover:text-green-400 transition">Depoimentos</a>
+        <a href="#kits" class="hover:text-green-400 transition">Kits</a>
+        <a href="#guarantee" class="hover:text-green-400 transition">Garantia</a>
+        <a href="#faq" class="hover:text-green-400 transition">FAQ</a>
+        <a href="https://pay.braip.co/pv/lip9jvq9/afivpdxezl" target="_blank" class="bg-green-500 px-4 py-2 rounded-full hover:bg-green-600 transition">Comprar Agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg text-white py-20 mt-16">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Nova Fórmula Mais Potente que auxilia no seu emagrecimento e combate à celulite</h1>
+        <p class="text-xl mb-6">Seu caminho para a melhor versão do seu corpo começa agora!</p>
+        <a href="https://pay.braip.co/ref?pv=pro3yoz3&af=afivpdxezl" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-600 transition animate-bounce">QUERO MEU LIFT DETOX</a>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0">
+        <img src="img/img lift detox" alt="Lift Detox Black" class="mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="bg-green-500 text-white py-2 overflow-hidden">
+    <div class="marquee inline-block whitespace-nowrap">
+      <span class="mx-4">FRETE GRÁTIS PARA TODO O BRASIL!</span>
+      <span class="mx-4">FRETE GRÁTIS PARA TODO O BRASIL!</span>
+      <span class="mx-4">FRETE GRÁTIS PARA TODO O BRASIL!</span>
+    </div>
+  </div>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="py-16 bg-white" style="min-height: 100vh; align-content: center;">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Benefícios do Lift Detox Black</h2>
+      <p class="text-center mb-8">Com apenas <strong>2 cápsulas por dia</strong>, obtenha resultados rápidos sem precisar de receitas caras ou chás mirabolantes!</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <img src="img/intestino.png" alt="Intestino Regulando" class="mx-auto mb-4" style="height: 80px;">
+          <h3 class="text-xl font-semibold">Intestino Regulando</h3>
+          <p>Melhora a saúde intestinal, promovendo bem-estar diário.</p>
+        </div>
+        <div class="text-center">
+          <img src="img/apetite.png" alt="Redução de Apetite" class="mx-auto mb-4" style="height: 80px;">
+          <h3 class="text-xl font-semibold">Redução de Apetite</h3>
+          <p>Controle a fome e evite exageros nas refeições.</p>
+        </div>
+        <div class="text-center">
+          <img src="img/estrias.png" alt="Melhora nas Estrias" class="mx-auto mb-4" style="height: 80px;">
+          <h3 class="text-xl font-semibold">Melhora nas Estrias</h3>
+          <p>Reduz a aparência de estrias, dando mais confiança.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ingredients Section -->
+  <section class="py-16 bg-gray-100" style="min-height: 100vh; align-content: center;">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Fórmula com Tecnologia Avançada</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <h3 class="text-xl font-semibold">Quitosana</h3>
+          <p>Auxilia na absorção de gorduras, promovendo o emagrecimento.</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-semibold">Laranja</h3>
+          <p>Rica em fibras, ajuda na saciedade e saúde digestiva.</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-semibold">Cromo</h3>
+          <p>Regula os níveis de açúcar no sangue, reduzindo a vontade de doces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">O que nossos clientes dizem</h2>
+      <p class="text-center mb-8">⭐⭐⭐⭐⭐ 4,8/5 com mais de 190.000 clientes satisfeitos!</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-lg text-center">
+          <img src="img/cliente.jpeg" alt="Ana" class="mx-auto mb-4 rounded-full" style="aspect-ratio: 1/1; height: 150px;">
+          <p class="italic">"Em 2 meses, perdi 8kg e minha pele está mais lisa!"</p>
+          <p class="font-semibold mt-2">Ana, 34 anos</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg text-center">
+          <img src="img/cliente2.jpeg" alt="Maria" class="mx-auto mb-4 rounded-full" style="aspect-ratio: 1/1; height: 150px;">
+          <p class="italic">"Nunca me senti tão confiante com meu corpo!"</p>
+          <p class="font-semibold mt-2">Maria, 28 anos</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg text-center">
+          <img src="img/cliente3.jpeg" alt="Joana" class="mx-auto mb-4 rounded-full" style="aspect-ratio: 1/1; height: 150px;">
+          <p class="italic">"O Lift Detox mudou minha relação com a comida!"</p>
+          <p class="font-semibold mt-2">Joana, 40 anos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kits Section -->
+  <section id="kits" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Escolha o Kit Ideal para Você</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <img src="img/1 pote.png" alt="imagem com 1 pote" style="width: 100%;">
+          <h3 class="text-xl font-semibold">1 Pote</h3>
+          <p class="text-2xl font-bold my-4">R$ 137,00</p>
+          <p>Inicie sua jornada!</p>
+          <a href="https://pay.braip.co/ref?pv=pro3yoz3&af=afivpdxezl" target="_blank" class="block bg-green-500 text-white px-6 py-3 mt-4 rounded-full hover:bg-green-600 transition">ESCOLHER MEU KIT</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center border-2 border-green-500">
+        <img src="img/3 potes.png" alt="imagem com 3 potes" style="width: 100%;">
+          <h3 class="text-xl font-semibold">Compre 2, Leve 3</h3>
+          <p class="text-2xl font-bold my-4">R$ 237,00</p>
+          <p class="text-green-500">Economize com a promoção!</p>
+          <p>Recomendado pelo fabricante</p>
+          <a href="https://pay.braip.co/pv/lip1omr5/afivpdxezl" target="_blank" class="block bg-green-500 text-white px-6 py-3 mt-4 rounded-full hover:bg-green-600 transition">ESCOLHER MEU KIT</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <img src="img/imagem com 5 potes.png" alt="imagem com 5 potes" style="width: 100%;">
+          <h3 class="text-xl font-semibold">Compre 3, Leve 5</h3>
+          <p class="text-2xl font-bold my-4">R$ 337,00</p>
+          <p class="text-green-500">Melhor custo-benefício!</p>
+          <p>Máximos resultados</p>
+          <a href="https://pay.braip.co/pv/lip1omr5/afivpdxezl" target="_blank" class="block bg-green-500 text-white px-6 py-3 mt-4 rounded-full hover:bg-green-600 transition">ESCOLHER MEU KIT</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Buy Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Comprar é Fácil!</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <img src="https://via.placeholder.com/64?text=Passo+1" alt="Passo 1" class="mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Escolha seu Kit</h3>
+          <p>Selecione o kit ideal para seus objetivos.</p>
+        </div>
+        <div class="text-center">
+          <img src="https://via.placeholder.com/64?text=Passo+2" alt="Passo 2" class="mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Finalize a Compra</h3>
+          <p>Pague com cartão, Pix ou boleto.</p>
+        </div>
+        <div class="text-center">
+          <img src="https://via.placeholder.com/64?text=Passo+3" alt="Passo 3" class="mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Receba em Casa</h3>
+          <p>Entrega rápida e segura!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee Section -->
+  <section id="guarantee" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">SUPER GARANTIA de 7 Dias – Risco Zero!</h2>
+      <p class="mb-8">Se por qualquer motivo você não ficar satisfeito com o Lift Detox Black, devolvemos 100% do seu dinheiro em até 7 dias após a compra. Sem complicações!</p>
+      <a href="https://pay.braip.co/pv/lipgpee1/afivpdxezl" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-600 transition">QUERO MEU LIFT DETOX AGORA!</a>
+    </div>
+  </section>
+
+  <!-- Special Promotions Section -->
+  <section id="promotions" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Aproveite Nossas Promoções Especiais</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-lg text-center">
+          <h3 class="text-xl font-semibold">Black Friday</h3>
+          <p>Lift Detox Black + Lift Night</p>
+          <a href="https://pay.braip.co/pv/lip0yv08/afivpdxezl" target="_blank" class="block bg-green-500 text-white px-6 py-3 mt-4 rounded-full hover:bg-green-600 transition">VER OFERTA</a>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg text-center">
+          <h3 class="text-xl font-semibold">Natal</h3>
+          <p>Lift Detox + Slim Gel</p>
+          <a href="https://pay.braip.co/pv/lipz9m5k/afivpdxezl" target="_blank" class="block bg-green-500 text-white px-6 py-3 mt-4 rounded-full hover:bg-green-600 transition">VER OFERTA</a>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg text-center">
+          <h3 class="text-xl font-semibold">Verão</h3>
+          <p>Promoção Especial Lift Detox</p>
+          <a href="https://pay.braip.co/pv/lip7n8lw/afivpdxezl" target="_blank" class="block bg-green-500 text-white px-6 py-3 mt-4 rounded-full hover:bg-green-600 transition">VER OFERTA</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Perguntas Frequentes</h2>
+      <div class="space-y-4">
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <h3 class="font-semibold">Como tomar o Lift Detox Black?</h3>
+          <p>Tome 2 cápsulas por dia, uma pela manhã e outra à noite, com água.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <h3 class="font-semibold">O produto é seguro?</h3>
+          <p>Sim, Lift Detox Black é 100% natural e aprovado pela Anvisa.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <h3 class="font-semibold">Qual o prazo de entrega?</h3>
+          <p>A entrega varia de 5 a 15 dias úteis, dependendo da sua região.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Links Úteis</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-green-400">Política de Privacidade</a></li>
+            <li><a href="#" class="hover:text-green-400">Termos de Uso</a></li>
+            <li><a href="#" class="hover:text-green-400">Rastrear Pedido</a></li>
+            <li><a href="#faq" class="hover:text-green-400">FAQ</a></li>
+            <li><a href="https://pay.braip.co/pv/lipdy98y/afivpdxezl" class="hover:text-green-400">Seja um Representante</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Formas de Pagamento</h3>
+          <p>Cartão, Pix, Boleto</p>
+          <div class="mt-4 flex space-x-2">
+            <img src="img/logo visa.png" alt="Visa" style="height: 70px;">
+            <img src="img/logo mastercard.png" alt="Mastercard" style="height: 70px;">
+            <img src="img/logo pix.png" alt="Pix" style="height: 70px;">
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Aviso Importante</h3>
+          <p>Produto vendido exclusivamente no site oficial. Não vendemos no Mercado Livre ou outros marketplaces.</p>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <p>© 2025 Lift Detox Black. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script para Menu Mobile -->
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
